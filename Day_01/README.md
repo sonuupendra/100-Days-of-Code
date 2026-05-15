@@ -8,3 +8,7 @@ This simple python program generates a fun band name using the city name and the
 - String Manipulation (String Concatenation)
 - Use input with input()
 - Variables and naming them
+
+## Screenshot
+
+![Band Name Generator Output](Screenshots/Band_Name_Generator_Output.png)
