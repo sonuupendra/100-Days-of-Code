@@ -1,7 +1,8 @@
-# DAY 1 - BAND NAME GENERATOR
-Welcome to my Day 1 project from the **100 Days of Code - Python Bootcamp** by Angela Yu.
+# DAY 1 - WORKING WITH VARIABLES IN PYTHON TO MANAGE DATA
 
-This simple python program generates a fun band name using the city name and the pet name.
+Welcome to my Day 1 of the **100 Days of Code - Python Bootcamp** by Angela Yu.
+
+Goal for the day: To build a simple python program that generates a fun band name using the city name and the pet name.
 
 ## Concepts Learnt and Practiced
 - Use of print() statement
@@ -9,6 +10,6 @@ This simple python program generates a fun band name using the city name and the
 - Use input with input()
 - Variables and naming them
 
-## Screenshot
+## 
 
 ![Band Name Generator Output](Screenshots/Band_Name_Generator_Output.png)
