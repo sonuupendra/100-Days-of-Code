@@ -10,6 +10,6 @@ Goal for the day: To build a simple python program that generates a fun band nam
 - Use input with input()
 - Variables and naming them
 
-## 
+## BAND NAME GENERATOR
 
 ![Band Name Generator Output](Screenshots/Band_Name_Generator_Output.png)
