@@ -43,6 +43,14 @@ if direction == "L" or "l":
                           ||  gnv
                           \/ 
               ''')
+        print("You may use the weapon for rest of your mission. To proceed, please select a location")
+        location = input("Choose a location: Forest or Ocean?")
+        if location.lower() == "forest":
+            print("You wandered too far in search of treasure… and got lost.")  
+        elif location.lower() == "ocean":
+            print("“Against the waves, you survived and won the treasure!”")
+        else:
+            print("Provide a correct selection.")
         
     elif weapon.lower()== "rifle":
         print('''
@@ -57,4 +65,6 @@ if direction == "L" or "l":
                                   /####/           \##\
                                  '===='             `=`
               ''')
-    print("You may use the weapon for rest of your mission")    
+    
+    else:
+        print("Provide a correct selection.")
