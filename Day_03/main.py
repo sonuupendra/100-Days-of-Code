@@ -48,7 +48,7 @@ if direction == "L" or "l":
         if location.lower() == "forest":
             print("You wandered too far in search of treasure… and got lost.")  
         elif location.lower() == "ocean":
-            print("“Against the waves, you survived and won the treasure!”")
+            print("Against the waves, you survived and won the treasure!")
         else:
             print("Provide a correct selection.")
         
@@ -65,6 +65,14 @@ if direction == "L" or "l":
                                   /####/           \##\
                                  '===='             `=`
               ''')
+        print("You may use the weapon for rest of your mission. To proceed, please select a location")
+        location = input("Choose a location: Desert or Arctic Ice?")
+        if location.lower() == "desert":
+            print("The scorching desert drained your strength. You got lost in the endless sands.")  
+        elif location.lower() == "arctic ice":
+            print("You crossed the frozen arctic ice and discovered the hidden treasure. You win!")
+        else:
+            print("Provide a correct selection.")
     
     else:
         print("Provide a correct selection.")
