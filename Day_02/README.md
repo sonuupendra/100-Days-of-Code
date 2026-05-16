@@ -1,6 +1,6 @@
 # DAY 2 - UNDERSTANDING DATA TYPES AND HOW TO MANIPULATE STRINGS
 
-Welcome to Day 1 of the **100 Days of Code - Python Bootcamp** by Angela Yu.
+Welcome to Day 2 of the **100 Days of Code - Python Bootcamp** by Angela Yu.
 
 Goal for the day: To build a simple python program that calculates how much a person should pay (including the TIP)
 
@@ -12,6 +12,6 @@ Goal for the day: To build a simple python program that calculates how much a pe
 - Using Assignment Operators (+=, -=, *=, /=, etc) 
 - F-Strings
 
-## BAND NAME GENERATOR
+## TIP CALCULATOR
 
 ![Tip Calculator Output](Screenshots/Tip_Calculator_Output.png)
