@@ -6,6 +6,6 @@ Goal for the day: To build a ROCK, PAPER AND SCISSOR game
 
 ## Concepts Learnt and Practiced
 - Ranmdom module, creation of module
-- LIST
+- LIST and modifications to list
 - Index errors pertaining to List
 
