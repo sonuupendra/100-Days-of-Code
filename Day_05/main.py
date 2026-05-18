@@ -32,6 +32,6 @@ complex_password = " "
 for char in shuffle_password:
     complex_password += char
 
-print("Recommended Strong Password" + complex_password)
+print("Recommended Strong Password:" + complex_password)
 
     
