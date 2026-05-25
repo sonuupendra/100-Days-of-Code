@@ -1,63 +1,43 @@
-import random
-import hangman_words
-import hangman_art
-# TODO-1: - Update the word list to use the 'word_list' from hangman_words.py
-lives = 6
-
-# TODO-3: - Import the logo from hangman_art.py and print it at the start of the game.
-print(hangman_art.logo)
-
-chosen_word = random.choice(hangman_words.word_list)
+# TODO-1: Import and print the logo from art.py when the program starts.
+from art import logo
+print(logo)
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 
-placeholder = ""
-word_length = len(chosen_word)
-for position in range(word_length):
-    placeholder += "_"
-print("Word to guess: " + placeholder)
 
-game_over = False
-correct_letters = []
+def caesar(original_text, shift_amount, encode_or_decode):
+    output_text = ""
 
-while not game_over:
+    if encode_or_decode == "decode":
+        shift_amount *= -1
 
-    # TODO-6: - Update the code below to tell the user how many lives they have left.
-    print(f"****************************{lives}/6 LIVES LEFT****************************")
-    guess = input("Please guess a letter: ").lower()
-
-    # TODO-4: - If the user has entered a letter they've already guessed, print the letter and let them know.
-    if guess in correct_letters:
-        print(f"You've already guessed {guess}")
-
-    display = ""
-
-    for letter in chosen_word:
-        if letter == guess:
-            display += letter
-            correct_letters.append(guess)
-        elif letter in correct_letters:
-            display += letter
+    for letter in original_text:
+        if letter not in alphabet:
+            output_text += letter
         else:
-            display += "_"
+            shift_text_index = alphabet.index(letter) + shift_amount
+            shift_text_index %= len(alphabet)
+            shift_text = alphabet[shift_text_index]
+            output_text += shift_text
 
-    print("Word to guess: " + display)
+    print(f"Here is the {encode_or_decode}d text: {output_text}")
 
-    # TODO-5: - If the letter is not in the chosen_word, print out the letter and let them know it's not in the word.
-    #  e.g. You guessed d, that's not in the word. You lose a life.
 
-    if guess not in chosen_word:
-        lives -= 1
-        print(f"You guessed {guess}, that's not in the word. You lose a life.")
 
-        if lives == 0:
-            game_over = True
+# A way to restart the cipher program?
 
-            # TODO 7: - Update the print statement below to give the user the correct word they were trying to guess.
-            print(f"The word was {chosen_word}\n***********************YOU LOSE**********************")
+ask_continue = True
 
-    if "_" not in display:
-        game_over = True
-        print("****************************YOU WIN****************************")
+while ask_continue:
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
+    text = input("Type your message:\n").lower()
+    shift = int(input("Type the shift number:\n"))
 
-    # TODO-2: - Update the code below to use the stages List from the file hangman_art.py
-    print(hangman_art.stages[lives])
+    caesar(original_text=text, shift_amount=shift, encode_or_decode=direction)
+
+    replay = input("Do you want to continue with encoding and decoding? If Yes, type yes, if no type no.\n").lower()
+    if replay == "no":
+        ask_continue = False
+        print("GOODBYE!")
+
+
