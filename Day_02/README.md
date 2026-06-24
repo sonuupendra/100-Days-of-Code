@@ -14,4 +14,5 @@ Goal for the day: To build a simple python program that calculates how much a pe
 
 ## TIP CALCULATOR
 
-![Tip Calculator Output](Screenshots/Tip_Calculator_Output.png)
+<img width="964" height="276" alt="Screenshot 2026-06-24 184217" src="https://github.com/user-attachments/assets/b79531ab-7344-4594-8e15-7b06bffa3030" />
+
