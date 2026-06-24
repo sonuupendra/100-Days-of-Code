@@ -4,4 +4,5 @@
 ## 🚀 About This Repository
 This repository contains my solutions and projects from the [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)
 
-
+# 🌱 Current Progress
+## 🌟 Beginner
