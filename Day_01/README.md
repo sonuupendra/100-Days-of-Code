@@ -12,4 +12,4 @@ Goal for the day: To build a simple python program that generates a fun band nam
 
 ## BAND NAME GENERATOR
 
-![Band Name Generator Output](Screenshots/Band_Name_Generator_Output.png)
+<img width="856" height="204" alt="Screenshot 2026-06-24 185527" src="https://github.com/user-attachments/assets/5505fa02-30f1-49a5-b026-b9968d4cce6f" />
