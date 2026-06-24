@@ -32,15 +32,15 @@ if direction.lower() == "l":
                           ()
                         __)(__
                         '-<>-'
-                          )(   __
-                          ||  / \\
-                          || (  ||)
-                          || ]_(\,|
-                          || ]-->/|
-                          || (  ||)
-                          ||  \_//
+                          )(   
+                          || 
+                          || 
+                          || 
+                          || 
+                          || 
+                          ||  
                           ||
-                          ||  gnv
+                          ||  
                           \/ 
               ''')
         print("You may use the weapon for rest of your mission. To proceed, please select a location\n")
